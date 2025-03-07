@@ -1,0 +1,146 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  transition: background-color 0.8s ease;
+  z-index: 1;
+}
+.header--is-hidden {
+  background-color: transparent;
+  transition: background-color, 0.8s ease;
+}
+.header--is-hidden .header__logo, .header--is-hidden .header__links__item:first-child {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity, 0.8s ease;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 36px;
+}
+@media (max-width: 768px) {
+  .header__container {
+    padding: 0 12px 0 20px;
+  }
+}
+.header__logo {
+  max-width: 40px;
+  width: 100%;
+  margin: 5px;
+  transition: opacity 0.8s ease;
+}
+@media (max-width: 768px) {
+  .header__logo {
+    max-width: 64px;
+  }
+}
+.header__links {
+  display: flex;
+}
+.header__links__item {
+  margin: 5px;
+  transition: opacity 0.8s ease;
+}
+.header .button {
+  height: 50px;
+}
+@media (max-width: 768px) {
+  .header .button {
+    font-size: 13px;
+    padding: 8px 11px;
+    height: 40px;
+    letter-spacing: 0;
+  }
+}
+
+.hero {
+  padding: 5.6vw;
+  min-height: 80vh;
+  background-image: url("../../dist/images/doutor_estranho-hero.jpeg");
+  background-size: cover;
+  text-align: center;
+}
+.hero__content {
+  max-width: 640px;
+}
+.hero__content img {
+  max-height: 500px;
+}
+
+.trailer {
+  padding: 5.6vw;
+  text-align: center;
+}
+.trailer__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 20px;
+  margin-top: 80px;
+}
+
+.footer {
+  padding: 120px;
+  text-align: center;
+  background-color: #570000;
+}
+.footer .text {
+  color: #f9f9f9;
+  font-family: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background-color: #000;
+}
+
+.title {
+  color: #fff;
+  font-size: 60px;
+}
+.title--red {
+  color: #e71d1d;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  color: #f9f9f9;
+  background-color: #570000;
+  border-radius: 4px;
+  padding: 8px 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border: 1px solid #570000;
+}
+.button:hover {
+  background-color: rgb(102.3, 0, 0);
+}
+.button--secundary {
+  background-color: #750000;
+}
+.button--secundary:hover {
+  background-color: rgb(132.3, 0, 0);
+}
+.button--dark {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: #f9f9f9;
+}
+.button--dark:hover {
+  background-color: #f9f9f9;
+  color: #000;
+}

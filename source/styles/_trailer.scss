@@ -1,0 +1,12 @@
+.trailer {
+    padding: 5.6vw;
+    text-align: center;
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        gap: 20px;
+        margin-top: 80px;
+    }
+}

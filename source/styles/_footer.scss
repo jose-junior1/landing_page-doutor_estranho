@@ -1,0 +1,12 @@
+@use 'color';
+
+.footer {
+    padding: 120px;
+    text-align: center;
+    background-color: color.$buttonBackgroundPrimary;
+
+    .text {
+        color: color.$corTextoSecundaria;
+        font-family: sans-serif;
+    }
+}

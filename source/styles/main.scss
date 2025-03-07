@@ -1,0 +1,65 @@
+@use 'color';
+@use 'header';
+@use 'hero';
+@use 'trailer';
+@use 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background-color: color.$corDeFundo;
+}
+
+.title {
+    color: color.$corTitulo;
+    font-size: 60px;
+
+    &--red {
+        color: color.$corTituloRed;
+    }
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: color.$corTextoSecundaria;
+    background-color: color.$buttonBackgroundPrimary;
+    border-radius: 4px;
+    padding: 8px 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border: 1px solid color.$buttonBackgroundPrimary;
+
+    &:hover {
+        background-color: lighten(color.$buttonBackgroundPrimary, 3%);
+    }
+
+    &--secundary {
+        background-color: color.$buttonBackgroundSecondary;
+
+        &:hover {
+            background-color: lighten(color.$buttonBackgroundSecondary, 3%);
+        }
+    }
+
+    &--dark {
+        background-color: rgba(color.$buttonBackgroundDark, 0.8);
+        border-color: color.$corTextoSecundaria;
+
+        &:hover {
+            background-color: color.$corTextoSecundaria;
+            color: color.$corDeFundo;
+        }
+    }
+}
