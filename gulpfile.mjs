@@ -11,13 +11,7 @@ function styles() {
         .pipe(gulp.dest("./dist/css"));
 }
 
-function comprimeImagem() {
-    console.log("Copiando imagens...");
-    return gulp.src("./source/images/*")
-        .pipe(gulp.dest("./dist/images"));
-}
-
-export default gulp.parallel(styles, comprimeImagem);
+export default gulp.series(styles);
 
 export function watch() {
     gulp.watch("./source/styles/**/*.scss", styles);
