@@ -1,6 +1,7 @@
 @use 'color';
 @use 'header';
 @use 'hero';
+@use 'about';
 @use 'trailer';
 @use 'footer';
 
@@ -8,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
+    font-family: sans-serif;
 }
 
 body {
@@ -18,10 +19,24 @@ body {
 .title {
     color: color.$corTitulo;
     font-size: 60px;
-
+    text-align: center;
+    padding-bottom: 100px;
+    
     &--red {
         color: color.$corTituloRed;
+        text-transform: uppercase;
     }
+}
+
+.title--small {
+    color: color.$corTextoSecundaria;
+    font-size: 28px;
+    padding: 50px 0;
+}
+
+.text {
+    color: color.$corTextoSecundaria;
+    line-height: 32px;
 }
 
 .button {

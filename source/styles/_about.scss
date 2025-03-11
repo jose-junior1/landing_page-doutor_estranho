@@ -1,0 +1,25 @@
+@use 'color';
+
+.about {
+    padding: 5.6vw;
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+
+    &__content {
+
+        .text {
+            padding: 50px 0;
+        }
+
+        &__list {
+            width: 40%;
+            margin: 0 auto;
+            padding: 40px 0;
+            color: color.$corTextoPrincipal;
+            text-align: justify;
+            line-height: 32px;
+            list-style: disc;
+        }
+    }
+}
