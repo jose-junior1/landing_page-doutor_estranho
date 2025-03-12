@@ -4,8 +4,10 @@
     padding: 120px;
     text-align: center;
     background-color: color.$buttonBackgroundPrimary;
+    width: 100%;
 
     
     .text {
         color: color.$corTextoSecundaria;
+    }
 }

@@ -10,20 +10,34 @@
 
     @media (max-width: 768px) {
         background-image: url('../../dist/images/doutor_estranho-hero-logo_mobile.jpeg');
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
     }
 
+    @media (max-width: 1023px) {
+        background-image: url('../../dist/images/doutor_estranho-hero-logo_mobile.jpeg');
+        background-size: cover;
+    }
+
     &__content {
-        max-width: 640px;
+        max-width: 768px;
         
         img {
             max-height: 500px;
         }
 
         @media (max-width: 768px) {
+            
             img {
-                max-width: 240px;
+                width: 100%;
+                padding-top: 200px;
+            }
+        }
+
+        @media (max-width: 1023px) {
+            
+            img {
+                width: 100%;
                 padding-top: 200px;
             }
         }
