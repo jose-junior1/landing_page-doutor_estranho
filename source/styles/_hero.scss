@@ -8,11 +8,24 @@
     background-size: cover;
     text-align: center;
 
+    @media (max-width: 768px) {
+        background-image: url('../../dist/images/doutor_estranho-hero-logo_mobile.jpeg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
     &__content {
         max-width: 640px;
         
         img {
             max-height: 500px;
+        }
+
+        @media (max-width: 768px) {
+            img {
+                max-width: 240px;
+                padding-top: 200px;
+            }
         }
     }
 }

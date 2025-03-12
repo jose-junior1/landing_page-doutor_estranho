@@ -6,10 +6,23 @@
     text-align: center;
     width: 70%;
 
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+
     &__content {
 
         .text {
             padding: 50px 0;
+
+            @media (max-width: 768px) {
+                padding: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            padding: 0;
+            text-align: justify;
         }
 
         &__list {
@@ -20,6 +33,10 @@
             text-align: justify;
             line-height: 32px;
             list-style: disc;
+
+            @media (max-width: 768px) {
+                width: 80%;
+            }
         }
     }
 }
